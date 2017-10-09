@@ -1,3 +1,5 @@
+开发工具: myeclipse
+
 一、schema规范:
 1.所有标签和属性都需要有schema文件来定义(xx.xsd)
 2.所有的文件都需要有一个id,在这里它叫namespace
