@@ -149,3 +149,27 @@ name="HelloWSImplService">
 		</port>
 </service>
 </definitions>
+
+
+
+五、WebService总结
+
+1.webService相当于HTTP+?+?
+	? : xml
+	? : schema 
+
+2.wsdl是什么?
+	WebService定义语言，对应.wsdl文档，一个WebService会对应一个唯一的wsdl文档，
+	定义了客户端与服务端发送请求和响应的数据格式的过程
+	
+3.如何发布一个WebService?
+	定义SEI(Service Endpoint interface) 	@webService @WebMethod
+	
+	定义SEI的实现
+	
+	发布: Endpoint.publish(url,SEIImplObject)
+
+4.如何请求一个WebService?
+	1）根据wsdl文档生成客户端代码 jdk(wsimport -keep url?wsdl)/cxf(wsdl2java url?wsdl)
+	
+	2）根据生成的代码调用WebService
